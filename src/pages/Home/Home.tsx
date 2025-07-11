@@ -1,6 +1,7 @@
 import { HomePicture, HomeDescription, HomeWrapper, Title, TwoColumnSection } from "./styles";
 import picture_1  from "../../assets/fizio.jpg";
 import picture_2 from "../../assets/fizio2.jpg";
+import Button from "../../components/Button/Button";
 
 function Home () {
     return (
@@ -22,6 +23,7 @@ function Home () {
              Regeneration beiträgt. In dieser freundlichen Lage empfängt Sie unser engagiertes Team mit
               viel Fachkompetenz und persönlichem Engagement – für Ihre Gesundheit und Ihr Wohlbefinden
               </p>
+              <Button name="UNSER TEAM" />
               </div>
               
              <HomePicture src={picture_2} alt="Physioter" />
