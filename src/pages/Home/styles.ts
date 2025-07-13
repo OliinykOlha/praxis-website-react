@@ -4,6 +4,10 @@ interface HomeDescriptionProps {
   primary?: boolean;
 }
 
+interface TwoColumnSectionProps {
+  isBackground?: boolean
+}
+
 export const HomeWrapper = styled.div`
   position: relative;
   width: 100%;
@@ -12,17 +16,39 @@ export const HomeWrapper = styled.div`
   flex-direction: column;
 `;
 
-export const TwoColumnSection = styled.div`
+export const TwoColumnSection = styled.div<TwoColumnSectionProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 350px;
   gap: 20px;
+  margin-top: 50px;
   padding: 20px;
+  background: ${({ isBackground }) =>
+  isBackground
+    ? `linear-gradient(
+        to top,
+        rgba(66, 115, 171, 1),
+        rgba(135, 206, 250, 0)
+      )`
+    : 'none'};
+  
 
   @media (max-width: 768px) {
     flex-direction: column;
   }
+`;
+
+export const KontaktSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+  height: 400px;
+  gap: 40px;
+  overflow: visible;
+  
+  font-size: 26px;
 `;
 
 export const HomePicture = styled.img<HomeDescriptionProps>`

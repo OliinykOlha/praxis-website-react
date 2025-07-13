@@ -1,8 +1,9 @@
-import { HomePicture, HomeDescription, HomeWrapper, Title, TwoColumnSection } from "./styles";
+import { HomePicture, HomeDescription, HomeWrapper, Title, TwoColumnSection, KontaktSection } from "./styles";
 import picture_1  from "../../assets/fizio.jpg";
 import picture_2 from "../../assets/fizio2.jpg";
 import Button from "../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
+import { AddressMap } from "../../components/AdressMap/AddressMap";
 
 function Home () {
     const navigate = useNavigate();
@@ -35,6 +36,23 @@ function Home () {
               
              <HomePicture src={picture_2} alt="Physioter" />
              </TwoColumnSection>
+             <TwoColumnSection isBackground>
+                <KontaktSection>
+                <Title>Kontakt</Title>
+                <p><strong>Tel. </strong> <span style={{textDecoration: 'underline'}}> 040 88167887</span></p>
+                <p><strong>E-Mail: </strong><span style={{textDecoration: 'underline'}}>info@physioteam-west.de</span></p>
+                </KontaktSection>
+                <KontaktSection>
+                    <Title>Öffnungszeiten:</Title>
+                    <p>Mo-Do  07:30 bis 18:00 Uhr</p>
+                    <p>Fr  07:30 bis 16:00 Uhr</p>
+                </KontaktSection>
+             </TwoColumnSection>
+
+             <AddressMap />
+
+             
+
              
 </>
             
