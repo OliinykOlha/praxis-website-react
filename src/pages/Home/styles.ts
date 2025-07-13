@@ -26,14 +26,15 @@ export const TwoColumnSection = styled.div`
 `;
 
 export const HomePicture = styled.img<HomeDescriptionProps>`
-  width: ${({primary}) => primary ?  '100%' : '450px'};
-  height: ${({primary}) => primary ?  '100%' : '350px'};
+  width: ${({ primary }) => (primary ? "100%" : "450px")};
+  height: ${({ primary }) => (primary ? "100%" : "350px")};
   object-fit: cover;
 `;
 
 export const HomeDescription = styled.div<HomeDescriptionProps>`
   position: absolute;
-  bottom: 30px;
+  bottom: ${({ primary }) => (primary ? "30px" : "none")};
+  margin-bottom: 20px;
   left: 20px;
   gap: 20px;
   font-size: 1rem;

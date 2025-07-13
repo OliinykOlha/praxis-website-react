@@ -2,8 +2,15 @@ import { HomePicture, HomeDescription, HomeWrapper, Title, TwoColumnSection } fr
 import picture_1  from "../../assets/fizio.jpg";
 import picture_2 from "../../assets/fizio2.jpg";
 import Button from "../../components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 function Home () {
+    const navigate = useNavigate();
+
+    const goToUnserTeam = () => {
+        navigate('/team')
+    }
+
     return (
         <>
         <HomeWrapper>
@@ -23,7 +30,7 @@ function Home () {
              Regeneration beiträgt. In dieser freundlichen Lage empfängt Sie unser engagiertes Team mit
               viel Fachkompetenz und persönlichem Engagement – für Ihre Gesundheit und Ihr Wohlbefinden
               </p>
-              <Button name="UNSER TEAM" />
+              <Button name="UNSER TEAM" onClick={goToUnserTeam} />
               </div>
               
              <HomePicture src={picture_2} alt="Physioter" />
