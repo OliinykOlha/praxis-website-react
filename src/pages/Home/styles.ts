@@ -5,7 +5,8 @@ interface HomeDescriptionProps {
 }
 
 interface TwoColumnSectionProps {
-  isBackground?: boolean
+  isBackground?: boolean;
+  isBorderBottom?: boolean;
 }
 
 export const HomeWrapper = styled.div`
@@ -32,6 +33,8 @@ export const TwoColumnSection = styled.div<TwoColumnSectionProps>`
         rgba(135, 206, 250, 0)
       )`
     : 'none'};
+
+    border-bottom: ${({ isBorderBottom }) => (isBorderBottom ? "3px solid #0a4b96ff" : "none")};
   
 
   @media (max-width: 768px) {

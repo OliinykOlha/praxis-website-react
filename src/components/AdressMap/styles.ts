@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 
 export const AddressSection = styled.div`
- display: flex;
- flex-direction: row;
- justify-content: space-around;
- width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
   background-color: #f5faff;
   padding: 32px;
   border-radius: 12px;
@@ -12,9 +12,8 @@ export const AddressSection = styled.div`
   align-items: center;
 `;
 
-
 export const InfoContainer = styled.div`
- max-width: 400px;
+  max-width: 400px;
 
   h2 {
     font-size: 24px;
