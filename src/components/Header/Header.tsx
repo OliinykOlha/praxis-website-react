@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 function Header () {
 return (
      <HeaderComponent>
-      <div style={{backgroundColor: '#473e40', height: "25 px", width: '100%'}}>
+      <div style={{backgroundColor: '#473e40', height:"25 px", width: '100%'}}>
        <Tiker>
-        Fürsorge ist unser Leidenschaft
+        Fürsorge ist unser Leidenschaft <span>(Nur eine Präsentationswebsite – kein echtes Angebot.) </span>  
         </Tiker>
          </div>
          <div style={{display: 'flex', justifyContent: 'space-between'}}>

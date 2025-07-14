@@ -8,7 +8,7 @@ return (
        <Header /> 
        <Main><Outlet /></Main>
        <Footer>
-      
+       <p>Diese Website dient nur zu Präsentationszwecken</p>
        </Footer>
     </LayoutComponent>
 )

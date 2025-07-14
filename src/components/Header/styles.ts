@@ -52,6 +52,7 @@ export const Tiker = styled.div`
   display: inline-block;
   padding-left: 100%;
   animation: scroll 30s linear infinite;
+  font-size: 20px;
   color: white;
   font-family: Dancing Script;
   font-style: italic;

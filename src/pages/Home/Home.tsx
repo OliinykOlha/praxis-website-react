@@ -10,7 +10,7 @@ import picture_1 from "../../assets/fizio.jpg";
 import picture_2 from "../../assets/fizio2.jpg";
 import picture_3 from "../../assets/leistungen.jpg";
 import Button from "../../components/Button/Button";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AddressMap } from "../../components/AdressMap/AddressMap";
 
 function Home() {
@@ -53,8 +53,9 @@ function Home() {
 
         <HomePicture src={picture_2} alt="Physioter" />
       </TwoColumnSection>
+
       <TwoColumnSection isBackground>
-        <KontaktSection>
+        <KontaktSection id="kontakt">
           <Title>Kontakt</Title>
           <p>
             <strong>Tel. </strong>{" "}
