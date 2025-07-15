@@ -4,9 +4,14 @@ import { CarouselWrapper, UnserTeamWrapper, UnserTeamDescription, PhotoGrid, Uns
 import {unserTeamPhotos} from "./data";
 import img from "../../assets/UnserTeamphotos/UTF8.jpg";
 import Button from "../../components/Button/Button";
+import { useNavigate } from "react-router-dom";
 
 function UnserTeam() {
+const navigate = useNavigate();
 
+const goToKontaktPage = () => {
+  navigate('/kontakt')
+};
   
   return (
     <UnserTeamWrapper>
@@ -43,7 +48,7 @@ function UnserTeam() {
 
       <UnserTeamPicture>
         <img src={img} alt="TerminPicture" />
-      <Button name="KONTAKT"/>
+      <Button name="KONTAKT" onClick={goToKontaktPage}/>
       
       </UnserTeamPicture>
 

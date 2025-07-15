@@ -12,7 +12,7 @@ interface TwoColumnSectionProps {
 export const HomeWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 800px;
   overflow: visible;
   flex-direction: column;
 `;
@@ -21,7 +21,7 @@ export const TwoColumnSection = styled.div<TwoColumnSectionProps>`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 350px;
+  max-height: 350px;
   gap: 20px;
   margin-top: 50px;
   padding: 20px;
@@ -47,7 +47,7 @@ export const KontaktSection = styled.div`
   flex-direction: column;
   margin-top: 30px;
   width: 100%;
-  height: 400px;
+  height: 250px;
   gap: 40px;
   overflow: visible;
   
