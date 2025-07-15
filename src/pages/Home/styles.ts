@@ -26,16 +26,16 @@ export const TwoColumnSection = styled.div<TwoColumnSectionProps>`
   margin-top: 50px;
   padding: 20px;
   background: ${({ isBackground }) =>
-  isBackground
-    ? `linear-gradient(
+    isBackground
+      ? `linear-gradient(
         to top,
         rgba(66, 115, 171, 1),
         rgba(135, 206, 250, 0)
       )`
-    : 'none'};
+      : "none"};
 
-    border-bottom: ${({ isBorderBottom }) => (isBorderBottom ? "3px solid #0a4b96ff" : "none")};
-  
+  border-bottom: ${({ isBorderBottom }) =>
+    isBorderBottom ? "3px solid #0a4b96ff" : "none"};
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -50,7 +50,7 @@ export const KontaktSection = styled.div`
   height: 250px;
   gap: 40px;
   overflow: visible;
-  
+
   font-size: 26px;
 `;
 
