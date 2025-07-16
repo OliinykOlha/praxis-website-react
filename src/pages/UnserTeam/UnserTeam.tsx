@@ -48,7 +48,7 @@ const goToKontaktPage = () => {
 
       <UnserTeamPicture>
         <img src={img} alt="TerminPicture" />
-      <Button name="KONTAKT" onClick={goToKontaktPage}/>
+      <Button name="KONTAKT" onClick={goToKontaktPage} isAbsolute/>
       
       </UnserTeamPicture>
 
