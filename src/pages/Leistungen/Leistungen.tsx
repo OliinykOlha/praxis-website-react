@@ -19,7 +19,7 @@ function Leistungen() {
   };
 
   const GoToKontakt = () => {
-    navigate('/#kontakt')
+    navigate('/kontakt')
   }
   
   return (

@@ -10,7 +10,7 @@ function UnserTeam() {
 const navigate = useNavigate();
 
 const goToKontaktPage = () => {
-  navigate('/kontakt')
+  navigate('/#kontakt')
 };
   
   return (

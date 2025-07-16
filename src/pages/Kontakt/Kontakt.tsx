@@ -2,7 +2,9 @@ import {
   KontaktComponent,
   KontaktDescription,
   KontaktPicture,
+  KontaktSection,
   KontaktWrapper,
+  TwoColumnSection,
 } from "./styles";
 import kontaktPicture from "../../assets/Kontakt/Kontakt.png";
 import KontaktForm from "../../components/KontaktForm/KontaktForm";
@@ -24,26 +26,26 @@ function Kontakt() {
         </KontaktDescription>
       </KontaktComponent>
 
-      <div style={{ marginTop: "80px" }}>
-        <div>
-          <h3>Kontakt</h3>
-          <p>
-            <strong>Tel. </strong>{" "}
-            <span style={{ textDecoration: "underline" }}> 000 33600</span>
-          </p>
-          <p>
-            <strong>E-Mail: </strong>
-            <span style={{ textDecoration: "underline" }}>
-              info@physioteam-west.de
-            </span>
-          </p>
-        </div>
-        <div>
-          <h3>Öffnungszeiten:</h3>
-          <p>Mo-Do 07:30 bis 18:00 Uhr</p>
-          <p>Fr 07:30 bis 16:00 Uhr</p>
-        </div>
-      </div>
+     <TwoColumnSection >
+             <KontaktSection >
+               <h4>Kontakt</h4>
+               <p>
+                 <strong>Tel. </strong>{" "}
+                 <span style={{ textDecoration: "underline" }}> 000 33600</span>
+               </p>
+               <p>
+                 <strong>E-Mail: </strong>
+                 <span style={{ textDecoration: "underline" }}>
+                   info@physioteam-west.de
+                 </span>
+               </p>
+             </KontaktSection>
+             <KontaktSection>
+               <h4>Öffnungszeiten:</h4>
+               <p>Mo-Do 07:30 bis 18:00 Uhr</p>
+               <p>Fr 07:30 bis 16:00 Uhr</p>
+             </KontaktSection>
+           </TwoColumnSection>
 
       <div>
         <KontaktForm />
