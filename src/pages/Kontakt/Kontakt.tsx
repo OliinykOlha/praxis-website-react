@@ -18,11 +18,12 @@ function Kontakt() {
           <h1 style={{ marginBottom: "15px" }}>Kontakt</h1>
           <p>
             Unser Praxisteam freut sich auf Ihre Kontaktaufnahme.
+            </p>
             <p>
               Allgemeine Anfragen, Anregungen, Lob und Kritik nehmen wir gerne
               persönlich, telefonisch oder per E-Mail entgegen.
             </p>
-          </p>
+          
         </KontaktDescription>
       </KontaktComponent>
 
