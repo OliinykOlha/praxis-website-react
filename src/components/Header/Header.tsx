@@ -1,4 +1,4 @@
-import { HeaderComponent, Logo, LogoText, Nav, StyledNavLink, Tiker } from "./styles";
+import { HeaderComponent, HeaderContent, Logo, LogoText, Nav, StyledNavLink, Tiker } from "./styles";
 import logo from '../../assets/logo1.png';
 import { Link } from "react-router-dom";
 
@@ -10,7 +10,7 @@ return (
         Fürsorge ist unser Leidenschaft <span>(Nur eine Präsentationswebsite – kein echtes Angebot.) </span>  
         </Tiker>
          </div>
-         <div style={{display: 'flex', justifyContent: 'space-between'}}>
+         <HeaderContent>
           <div style={{display: 'flex', justifyContent: 'space-around'}}>
             <Link to='/'>
         <Logo src={logo} alt='Physioteam-West Logo' />
@@ -28,7 +28,7 @@ return (
           <StyledNavLink to='/team'>TEAM</StyledNavLink>
           <StyledNavLink to='/kontakt'>KONTAKT</StyledNavLink>
         </Nav>
-       </div>
+       </HeaderContent>
       </HeaderComponent>
 )
 }

@@ -11,12 +11,24 @@ export const HeaderComponent = styled.header`
   border: none;
   border-bottom: 3px solid #0a4b96ff;
   background-color: #004b8006;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+    gap: 10px;
+  }
 `;
 
 export const Nav = styled.nav`
   display: flex;
   margin-top: 25px;
   gap: 15px;
+
+   @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    gap: 10px;
+  }
 `;
 
 export const StyledNavLink = styled(NavLink)`
@@ -40,11 +52,20 @@ export const Logo = styled.img`
   height: 60px;
   width: 60px;
   border-radius: 50%;
+
+   @media (max-width: 768px) {
+    height: 45px;
+    width: 45px;
+  }
 `;
 
 export const LogoText = styled.div`
   font-size: 30px;
   font-family: Dancing Script;
+
+   @media (max-width: 768px) {
+    font-size: 22px;
+  }
 `;
 
 export const Tiker = styled.div`
@@ -64,5 +85,21 @@ export const Tiker = styled.div`
     100% {
       transform: translateX(-100%);
     }
+  }
+
+   @media (max-width: 768px) {
+    font-size: 14px;
+    padding-left: 50%;
+  }
+`;
+
+export const HeaderContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
 `;
