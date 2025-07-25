@@ -1,0 +1,43 @@
+.phone-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #0a4b96ff;
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.phone-number {
+  opacity: 0;
+  max-width: 0;
+  margin-left: 0;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.phone-icon {
+  font-size: 24px;
+  /* transition: transform 0.3s ease; */
+}
+
+.phone-button:hover {
+  border-radius: 40px;
+  padding: 12px 20px;
+  background-color: #006bb3;
+}
+
+.phone-button:hover .phone-number {
+  opacity: 1;
+  max-width: 200px;
+  margin-left: 10px;
+}
