@@ -11,7 +11,7 @@ export const HeaderComponent = styled.header`
   border: none;
   border-bottom: 3px solid #0a4b96ff;
   background-color: #004b8006;
-
+z-index: 10;
   @media (max-width: 768px) {
     padding: 10px;
     gap: 10px;

@@ -6,6 +6,7 @@ import MyVideo from "..//../assets/Video/istockphoto-1410441629-640_adpp_is.mp4"
 function Körperpraktiken() {
   return (
     <div className="wrapper">
+      <div className="hero">
       <div
         className="background"
         style={{
@@ -15,6 +16,7 @@ function Körperpraktiken() {
 
       <div className="overlay">
       <Variants />
+      </div>
       </div>
       <video
         className="video"
