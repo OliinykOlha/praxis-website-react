@@ -17,6 +17,7 @@
     "axios": "^1.10.0",
     "formic": "^0.0.10",
     "formik": "^2.4.6",
+    "motion": "^12.23.12",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3",
