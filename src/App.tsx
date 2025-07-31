@@ -4,6 +4,8 @@ import Home from "./pages/Home/Home"
 import Leistungen from "./pages/Leistungen/Leistungen"
 import UnserTeam from "./pages/UnserTeam/UnserTeam"
 import Kontakt from "./pages/Kontakt/Kontakt"
+import Körperpraktiken from "./pages/Schwerpunkte/Körperpraktiken"
+
 
 function App() {
   
@@ -16,6 +18,7 @@ function App() {
           <Route path="leistungen" element={<Leistungen />} />
           <Route path="team" element={<UnserTeam />} />
           <Route path="kontakt" element={<Kontakt />} />
+          <Route path="körperpraktiken" element={<Körperpraktiken />}/>
         
 
         </Route>

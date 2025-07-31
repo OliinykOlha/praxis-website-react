@@ -27,6 +27,7 @@ return (
           <StyledNavLink to='/leistungen'>LEISTUNGEN</StyledNavLink>
           <StyledNavLink to='/team'>TEAM</StyledNavLink>
           <StyledNavLink to='/kontakt'>KONTAKT</StyledNavLink>
+          <StyledNavLink to='/körperpraktiken'>Körperpraktiken</StyledNavLink>
         </Nav>
        </HeaderContent>
       </HeaderComponent>
