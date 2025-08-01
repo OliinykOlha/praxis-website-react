@@ -1,9 +1,9 @@
 import type { Variants } from "motion/react";
 import { motion } from "motion/react";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 
-export default function Variants() {
+
+export default function Variant() {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
   const { height } = useDimensions(containerRef);
@@ -69,10 +69,10 @@ const itemVariants = {
 
 const colors = ["#4379DC", "#4651DC", "#2736DC", "#4379DC"];
 const practices = [
-  { name: "Physio Yoga", schedule: "Mo/Mi 18:00-19:00", url: "/yoga" },
-  { name: "Krankengymnastik", schedule: "Di/Do 18:00-19:00", url: "/krankengymnastik"},
-  { name: "Pilates", schedule: "Di/Do 13:00-14:00", url: "/pilates" },
-  { name: "Power Plate Training", schedule: "nach Vereinbarung", url: "/powerplate"},
+  { name: "Physio Yoga", schedule: "Mo/Mi 18:00-19:00", url: "#yoga" },
+  { name: "Krankengymnastik", schedule: "Di/Do 18:00-19:00", url: "#krankengym"},
+  { name: "Pilates", schedule: "Di/Do 13:00-14:00", url: "#pilates" },
+  { name: "Power Plate Training", schedule: "nach Vereinbarung", url: "#powerplate"},
 ];
 
 const MenuItem = ({
@@ -84,7 +84,18 @@ const MenuItem = ({
 }) => {
   const border = `2px solid ${color}`;
   return (
-     <Link to={practice.url} style={{textDecoration: 'none'}}>
+     <a
+  href={practice.url}
+  onClick={(e) => {
+    e.preventDefault();
+    const targetId = practice.url.replace("#", "");
+    const target = document.getElementById(targetId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  }}
+  style={{ textDecoration: 'none' }}
+>
     <motion.li
       style={listItem}
       variants={itemVariants}
@@ -97,7 +108,7 @@ const MenuItem = ({
         <div style={practiceTime}>{practice.schedule}</div>
       </div>
     </motion.li>
-     </Link>
+     </a>
   );
 };
 

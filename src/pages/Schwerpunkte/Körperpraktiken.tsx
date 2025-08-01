@@ -1,7 +1,8 @@
-import Variants from "../../components/Variants/Variants";
 import "./styles.css";
 import img from "../../assets/Körperpraktiken/Körperpraktiken.jpg";
 import MyVideo from "..//../assets/Video/istockphoto-1410441629-640_adpp_is.mp4";
+import Variant from "../../components/Variants/Variants";
+import GridBlock from "../../components/Grid/Grid";
 
 function Körperpraktiken() {
   return (
@@ -15,7 +16,7 @@ function Körperpraktiken() {
       ></div>
 
       <div className="overlay">
-      <Variants />
+      <Variant />
       </div>
       </div>
       <video
@@ -28,6 +29,9 @@ function Körperpraktiken() {
         autoPlay
         loop
       ></video>
+      <div className="grid-wrapper">
+        <GridBlock />
+      </div>
       </div>
     
   );
